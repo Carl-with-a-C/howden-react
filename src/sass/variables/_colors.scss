@@ -1,0 +1,25 @@
+// Colors
+
+$black: #000;
+$dark-grey: #646363;
+$grey: #989898;
+$light-grey: #e3e3e3;
+$white: #fff;
+$red: #d22630;
+$dark-red: #a51c24;
+$dark-blue: #28343c;
+$fade-blue: #3b454b;
+
+// Gradients
+
+$image-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0.75) 100%
+);
+
+$dark-image-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.4) 0%,
+  rgba(0, 0, 0, 1) 100%
+);

@@ -1,0 +1,110 @@
+.gateway-container {
+  text-align: center;
+  @media (min-width: 64em) {
+    margin: 0 8rem;
+  }
+  @media (min-width: 1460px) {
+    max-width: 1360px;
+    margin: auto;
+  }
+}
+
+.boxes {
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  background-image: $dark-image-gradient,
+    url(https://images.pexels.com/photos/4484078/pexels-photo-4484078.jpeg?auto=compress&cs=tinysrgb&w=800);
+  color: $white;
+  height: 15rem;
+  padding: 0 2rem;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+  transition: all 1000ms cubic-bezier(0.78, 0.01, 0.21, 1);
+  h3 {
+    padding-bottom: 0.25rem;
+    transition: all 250ms cubic-bezier(0.78, 0.01, 0.21, 1);
+  }
+  p,
+  button {
+    transition: all 250ms cubic-bezier(0.78, 0.01, 0.21, 1);
+  }
+
+  @media (min-width: 64em) {
+    background-image: $image-gradient,
+      url(https://images.pexels.com/photos/4484078/pexels-photo-4484078.jpeg?auto=compress&cs=tinysrgb&w=800);
+    height: 18rem;
+    padding: 2rem calc(2rem + 0.5vw);
+    transition: all 100ms cubic-bezier(0.78, 0.01, 0.21, 1);
+    h3 {
+      transform: translateY(2.5rem);
+    }
+    p {
+      opacity: 0;
+      transform: translateY(1.5rem);
+    }
+    button {
+      transform: translateY(-0.5rem);
+    }
+    &:hover {
+      transition: all 500ms cubic-bezier(0.78, 0.01, 0.21, 1) 50ms;
+      background-image: $dark-image-gradient,
+        url(https://images.pexels.com/photos/4484078/pexels-photo-4484078.jpeg?auto=compress&cs=tinysrgb&w=800);
+
+      h3 {
+        transform: translateY(-1rem);
+        transition: all 350ms cubic-bezier(0.78, 0.01, 0.21, 1);
+      }
+      p {
+        opacity: 1;
+        transform: translateY(-1.5rem);
+        transition: all 350ms cubic-bezier(0.78, 0.01, 0.21, 1) 50ms;
+      }
+      button {
+        transform: translateY(-1rem);
+        transition: all 350ms cubic-bezier(0.78, 0.01, 0.21, 1) 120ms;
+      }
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .box-1 {
+    margin-right: 0.25rem;
+  }
+
+  .box-2 {
+    margin-left: 0.25rem;
+  }
+  .box-3 {
+    margin-right: 0.25rem;
+  }
+  .box-4 {
+    margin-left: 0.25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .box-1 {
+    margin-right: 0.25rem;
+  }
+
+  .box-2 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .box-3 {
+    margin-left: 0.25rem;
+    margin-right: 0;
+  }
+  .box-4 {
+    margin-left: 0;
+    margin-right: 0.25rem;
+  }
+  .box-5 {
+    margin-left: 0.25rem;
+  }
+}

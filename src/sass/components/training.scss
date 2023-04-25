@@ -1,0 +1,50 @@
+.training-main {
+  background-color: $dark-blue;
+  text-align: center;
+  h2 {
+    color: $white;
+  }
+}
+
+.training-img-container {
+  img {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+}
+
+.training-box-container {
+}
+
+.training-boxes {
+  height: 14em;
+  color: $white;
+  p {
+    margin: 0;
+  }
+  @media (max-width: 40em) {
+    padding: 5rem 0;
+  }
+  @media (min-width: 64em) {
+    margin: 0 8rem;
+  }
+  @media (min-width: 1460px) {
+    max-width: 1360px;
+    margin: auto;
+  }
+}
+
+.training-box {
+  border-right: 0.25em solid $dark-blue;
+}
+
+.training-box {
+  background-color: $fade-blue;
+  padding-top: 4em;
+  margin: 0;
+  h1 {
+    color: $grey;
+  }
+}

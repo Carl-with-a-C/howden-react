@@ -1,0 +1,226 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+
+//EXPLORE
+.exp-btn {
+  width: fit-content;
+  height: 35px;
+  padding: 0.75em 1em;
+  border-radius: 32px;
+  font-size: var(--fs-12);
+  font-weight: bold;
+  letter-spacing: var(--cs--0-12);
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: fit-content;
+    height: auto;
+    font-size: var(--fs-16);
+    letter-spacing: var(--cs--0-16);
+  }
+}
+
+//EXPLORE styles
+.exp-red {
+  background-color: $red;
+  color: $white;
+  &:active {
+    background-color: $dark-red;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $grey;
+    color: $light-grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    &:hover {
+      background-color: $dark-red;
+      color: $white;
+    }
+    &:active {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+.exp-wht {
+  background-color: $white;
+  color: $dark-blue;
+  border: solid 2px $dark-blue;
+  &:active {
+    background-color: $dark-blue;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $white;
+    color: $grey;
+    border: solid 2px $grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    &:hover {
+      background-color: $dark-blue;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-grey;
+      color: $white;
+      border: none;
+    }
+  }
+}
+
+.exp-blue {
+  background-color: $dark-blue;
+  color: $white;
+  border: solid 2px $white;
+  &:active {
+    background-color: $white;
+    color: $dark-blue;
+  }
+  &:disabled {
+    background-color: $dark-blue;
+    color: $grey;
+    border: solid 2px $grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    &:hover {
+      background-color: $white;
+      color: $dark-blue;
+    }
+    &:active {
+      background-color: $light-grey;
+      color: $dark-blue;
+      border: none;
+    }
+  }
+}
+
+//TAB
+.tab-btn {
+  width: fit-content;
+  height: 35px;
+  border-radius: 32px;
+  padding: 0 1rem;
+  font-size: var(--fs-12);
+  font-weight: bold;
+  letter-spacing: var(--cs--0-12);
+  background-color: $white;
+  color: $dark-blue;
+  border: solid 2px $dark-blue;
+  &:active {
+    background-color: $white;
+    color: $red;
+    border: solid 2px $red;
+  }
+  &:disabled {
+    background-color: $white;
+    color: $grey;
+    border: solid 2px $grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: fit-content;
+    height: 40px;
+    padding: 0 1rem;
+    font-size: var(--fs-16);
+    letter-spacing: var(--cs--0-16);
+    &:hover {
+      background-color: $white;
+      color: $red;
+      border: solid 2px $red;
+    }
+    &:active {
+      background-color: $dark-blue;
+      color: $white;
+      border: solid 2px $dark-blue;
+    }
+  }
+}
+
+//SEARCH
+.search-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 100% !important;
+  background-color: $dark-blue;
+  color: $white;
+  // transform: translateX(-100%);
+  &:active {
+    background-color: $red;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $grey;
+    color: $light-grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-red;
+      color: $white;
+    }
+  }
+}
+
+//BACK
+.back-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: $dark-blue;
+  color: $white;
+  &:active {
+    background-color: $red;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $grey;
+    color: $light-grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-red;
+      color: $white;
+    }
+  }
+}
+
+//PLAY
+.play-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: $red;
+  color: $white;
+  &:active {
+    background-color: $dark-grey;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $grey;
+    color: $light-grey;
+  }
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background-color: $dark-blue;
+      color: $white;
+    }
+    &:active {
+      background-color: $dark-grey;
+      color: $white;
+    }
+  }
+}
